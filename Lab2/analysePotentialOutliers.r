@@ -1,3 +1,5 @@
 analysePotentialOutliers <-function(data, threshold){
-    df <- read.read(data)
+    df <- data.frame(read.csv(data))
+    
+
 }

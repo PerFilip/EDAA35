@@ -1,0 +1,1 @@
+scp fi6468he-s@login.student.lu.se:/usr/local/cs/EDAA35/data.txt ~/Projects/EDAA35/Lab2/data
