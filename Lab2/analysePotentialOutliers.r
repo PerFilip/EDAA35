@@ -1,5 +1,5 @@
-analysePotentialOutliers <-function(data, threshold){
-    df <- data.frame(read.csv(data))
-    
-
-}
+source("~/Projects/EDAA35/Lab2/lab.r")
+data <- data.frame(read.csv("~/Projects/EDAA35/Lab2/data/data.txt"))
+data <- removeNA(data)
+a <- analysePotentialOutliers(data, c(5, 5, 0))
+print(a)
