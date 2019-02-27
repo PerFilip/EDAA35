@@ -10,7 +10,6 @@ public class ListSorter{
         {
             int prevNodeValue = linkedList.getFirst();
             int curNodeValue;
-            while()
         }
         return linkedList;
     }
