@@ -47,12 +47,12 @@ public class labSelfMade
             for (int n = 0; n <= N; n++) 
             {
                 LinkedList<Integer> newCopiedList = (LinkedList<Integer>) numbers.clone();
-                long startTime = System.currentTimeMillis();
+                long startTime = System.nanoTime();
                 ListSorter.sort(newCopiedList);
-                long stopTime = System.currentTimeMillis();
+                long stopTime = System.nanoTime();
 
                 long time = stopTime - startTime;
-                fr.write("Time measurement " + n + ": " + time + " ms" + System.lineSeparator());
+                fr.write(n + ", " + time + System.lineSeparator());
             }
 
             fr.close();
