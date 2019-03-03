@@ -8,16 +8,17 @@ plotresult <- function(file , start = 1) {
 # plotresult("result1.txt") # plot to screen
 # pdf("result1.pdf") # Jämvikt ser ut att ha nåtts vid 
 # plotresult("result1.txt") # plot to pdf file
-sumMedel = list()
-for (i in 10) {
+sumMedel <- c()
+for (i in 1:10) {
   system("java lab data1 result1 600")
   data <- read.csv("result1.txt")
   data <- data[400:nrow(data),]
-  sumMedel.add(mean(data))
+  sumMedel <- c(sumMedel, mean(data))
   file.remove("result1.txt")
 }
+print(sumMedel)
 medel = mean(sumMedel)
-interval = t.test(sumMedel)
-print(interval)
-dev.off()
+print(medel)
+t.test(rnorm(sumMedel))
+# dev.off()
 
