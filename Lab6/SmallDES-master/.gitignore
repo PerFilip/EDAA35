@@ -1,0 +1,45 @@
+# simulation results (output from simulation program)
+*.sim
+
+# Java, Scala
+**/*.class
+
+# Sbt
+**/target
+
+# sbteclipse plugin
+.target
+
+# Eclipse
+.cache-main
+.metadata
+.project
+.settings/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.loadpath
+.recommenders
+.classpath
+
+# Scala IDE specific (Scala & Java development for Eclipse)
+.scala_dependencies
+.worksheet
+
+# IntelliJ
+.idea
+
+# Editor swap files
+*~      # emacs
+*.swp   # vim
+
+# Mac OS 
+.DS_Store
+
+# R files
+.Rhistory
+

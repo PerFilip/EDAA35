@@ -9,7 +9,7 @@ plotresult <- function(file , start = 1) {
 # pdf("result1.pdf") # Jämvikt ser ut att ha nåtts vid 
 # plotresult("result1.txt") # plot to pdf file
 sumMedel <- c()
-for (i in 1:10) {
+for (i in 1:100) {
   system("java lab data1 result1 600")
   data <- read.csv("result1.txt")
   data <- data[400:nrow(data),]
@@ -19,6 +19,6 @@ for (i in 1:10) {
 print(sumMedel)
 medel = mean(sumMedel)
 print(medel)
-t.test(rnorm(sumMedel))
+t.test(sumMedel)
 # dev.off()
 
