@@ -16,6 +16,7 @@ public class labSelfMade
         int N = Integer.parseInt(args[2]);
         BufferedReader br;
         FileWriter fr;
+        TildaSort ts = new TildaSort();
 
         try {
             if (!writeFile.createNewFile()) {
@@ -48,7 +49,7 @@ public class labSelfMade
             {
                 LinkedList<Integer> newCopiedList = (LinkedList<Integer>) numbers.clone();
                 long startTime = System.nanoTime();
-                ListSorter.sort(newCopiedList);
+                ts.sort(newCopiedList);
                 long stopTime = System.nanoTime();
 
                 long time = stopTime - startTime;
